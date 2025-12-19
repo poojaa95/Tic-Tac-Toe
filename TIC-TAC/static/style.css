@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: purple;
+}
+
+/* Game container background changed */
+.game {
+    background: #f8e9f8;   /* light lavender-pink */
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(128, 0, 128, 0.2);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    font-size: 36px;
+    cursor: pointer;
+    border: 2px solid plum;
+    background: white;
+    font-weight: bold;
+}
+
+/* Hover */
+.cell:hover:enabled {
+    background: #f1d6f1;
+}
+
+/* Player X color */
+.cell:disabled[value="X"] {
+    color: plum;
+}
+
+/* Player O color */
+.cell:disabled[value="O"] {
+    color: #9b59b6;  /* softer purple shade */
+}
+
+.reset {
+    padding: 8px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    background: plum;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.reset:hover {
+    background: purple;
+}
